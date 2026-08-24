@@ -83,9 +83,7 @@
     - Exhausted adalah kondisi di mana kecepatan character 0.6x kecepatan normal dan character tidak bisa melakukan aksi selain [[CoreMechanic#^walk|walk]] atau [[CoreMechanic#^strafing|strafing]] sampai stamina mencapai nilai maksimal. Kondisi exhausted akan berhenti begitu stamina character mencapai nilai maksimal. ^exhausted
     - ##### Base stamina cost
       - Berikut ini adalah nilai dasar stamina point yang dibutuhkan untuk melakukan suatu aksi. **PERHATIAN:** programmer dan tim sangat dianjurkan untuk melakukan penyesuaian nilai ini untuk meningkatkan game feel dan game balance dari game ini. Ini hanya sebagai nilai dasar.
-      > \[!note]- Stamina cost
-    > | Movement | Stamina cost |
-    > | [[CoreMechanic#^sprint|sprint]]| 0.1x per detik|
+      - ![[BaseStaminaCostTable]]
 
   - #### Buff & Nerf
     - adalah buff nerf ^buff-nerf
