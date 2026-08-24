@@ -2,7 +2,7 @@
   - Untuk memenangkan permainan, character (baik player character maupun AI character) bisa melakukan beragam jenis movement.
   - Ketika melakukan [[CoreMechanic#^movement]], character menggunakan stamina
   - Selama permainan berlangsung, character bisa mendapatkan buff & nerf dari menyentuh token buff & nerf yang dimunculkan secara sembarang di wilayah arena dalam interval tertentu
-  - #### Movement ^movement
+  - #### Movement^movement
     - ##### Walk
     - ##### Run
     - ##### Jump
