@@ -1,11 +1,11 @@
-This is your new _vault_.
+Ini adalah game design document untuk project Chase Tag.
 
-Make a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!
+Pada dokumen ini kamu bisa mendapatkan beragam macam informasi game design tentang project ini:
 
-When you're ready, delete this note and make the vault your own.
+- ## [[CoreExperience | Core experience]]
+- ## [[CoreMechanic | Core mechanic]]
 
-This is first start
+Selain itu, ada informasi tentang art direction dan asset listing:
 
-this is chase tag game
-
-ini setelah diedit
+- ## [[ArtDesignDocument | Art design document]]
+-

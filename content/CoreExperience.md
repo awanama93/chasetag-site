@@ -1,0 +1,7 @@
+- ## Deskripsi core experience
+  - Chase Tag adalah game action 3D di mana player harus melakukan tag terhadap lawan dalam waktu yang telah ditentukan
+  -
+- ## Referensi
+  - World chase tag
+  - Pac-man
+  -
