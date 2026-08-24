@@ -22,18 +22,12 @@
 - ### Struktur Permainan
   - #### End condition
     - Satu sesi permainan terdiri atas 5 ronde
-    - Sebelum sesi dimulai, dilakukan pengacakan apa [[#^1661e5 |role]] dari player character maupun AI character
+    - Sebelum sesi dimulai, dilakukan pengacakan apa [[Role|role]] dari player character maupun AI character
     - ##### Timer
       - 1 ronde dilaksanakan selama 1 menit (real-life time)
     - #### Win condition
-      - Player character menang jika berhasil memenuhi objective dari [[#^1661e5 |role]]-nya pada ronde tersebut
+      - Player character menang jika berhasil memenuhi objective dari [[Role|role]]-nya pada ronde tersebut
     - #### Lose condition
-      - Player character kalah jika gagal memenuhi objective dari [[#^1661e5 |role]]-nya pada ronde tersebut
-
-  - #### Role ^1661e5
-    - ##### Chaser
-      - Chaser adalah role di mana character harus melakukan tag pada lawan untuk memenangkan ronde
-    - ##### Evader
-      - Evader adalah role di mana character harus menghindari tag dari lawan selama ronde berlangsung
-
+      - Player character kalah jika gagal memenuhi objective dari [[Role|role]]-nya pada ronde tersebut
+        ![[Role]]
   - #### Score
