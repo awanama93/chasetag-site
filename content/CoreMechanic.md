@@ -71,6 +71,7 @@
       - Vault berarti character menggunakan tangannya untuk meraih permukaan yang setidaknya lebih tinggi dari pinggangnya, lalu menarik badannya dan meluncur di atas permukaan tersebut
       - Jika character melakukan vault, maka [[CoreMechanic#^stamina|stamina]] berkurang sekali ketika vault dimulai, dan [[CoreMechanic#^stamina|stamina]] baru kembali bertambah ketika character sudah berdiri kembali
       - Character bisa melakukan vault selama dia memiliki [[CoreMechanic#^stamina|stamina]] yang cukup untuk melakukan vault
+      - ![](https://youtu.be/fDNoiQXPYMM?si=-dl2VqPHn-NVxF9X\&t=273)
     - ##### Climb
       - Character bisa memanjat (climb) ^climb
       - Climb berarti character menggunakan tangannya untuk meraih permukaan lebih tinggi dari badan, lalu mengangkat tubuhnya sehingga bisa character menaik ke puncak permukaan tersebut
