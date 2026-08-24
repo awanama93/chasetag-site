@@ -1,3 +1,32 @@
+### Struktur Permainan
+
+- Satu sesi permainan terdiri atas 5 [[CoreMechanic#^ronde|ronde]]
+- Sebelum sesi dimulai, dilakukan pengacakan apa [[CoreMechanic#^role|role]] dari player character maupun AI character
+- ##### Timer
+  - 1 ronde dilaksanakan selama 2 menit (real-life time)^ronde
+
+#### End condition
+
+- paling lambat, permainan selesai jika sudah dilakukan 5 [[CoreMechanic#^ronde|ronde]] ^end-condition
+- tetapi permainan bisa dinyatakan selesai jika ada satu character yang sudah memenangkan 3 [[CoreMechanic#^ronde|ronde]]
+- #### Round win condition
+  - Character menang di suatu ronde jika berhasil memenuhi objective dari [[CoreMechanic#^role|role]]-nya pada ronde tersebut
+  - Jika menang, maka score character tersebut bertambah 1
+
+* #### Round lose condition
+  - Character kalah di suatu ronde jika gagal memenuhi objective dari [[CoreMechanic#^role|role]]-nya pada ronde tersebut
+
+#### Role
+
+- #### Chaser
+  - Chaser adalah role di mana character harus melakukan tag pada lawan untuk memenangkan ronde ^role
+  - Character yang memiliki role chaser menang pada suatu ronde jika dia berhasil melakukan tag terhadap character lawan sebelum ronde berakhir ^chaser
+  - Chaser bisa melakukan [[CoreMechanic#^tagging|tagging]]
+- #### Evader
+  - Evader adalah role di mana character harus menghindari tag dari lawan selama ronde berlangsung ^evader
+  - Character yang memiliki role evader menang pada suatu ronde jika dia berhasil tidak dikenai tag oleh character lawan sampai ronde berakhir
+  - Evader tidak bisa melakukan [[CoreMechanic#^tagging|tagging]]
+
 ### Character
 
 - Untuk memenangkan permainan, character (baik player character maupun AI character) bisa melakukan beragam jenis movement.
@@ -86,37 +115,26 @@
       - ![[BaseStaminaCostTable |Stamina Cost Table]]
 
   - #### Buff & Nerf
-    - adalah buff nerf ^buff-nerf
+    - Sepanjang ronde di wilayah arena akan dimunculkan beragam buff dan nerf token ^buff-nerf
+    - Token buff dan nerf adalah token yang akan mengubah nilai stat dari character selama beberapa saat. Jadi perubahannya tidak permanen.
+    - Player bisa melihat buff atau nerf apa yang sedang dimiliki player character lewat informasi di user interface
+    - Player bisa melihat buff atau nerf apa yang sedang dimiliki AI character lewat informasi simbol yang ada di atas AI character
+    - Untuk mengaktifkan token buff dan nerf, character hanya perlu menabrak token tersebut
+    - Token buff dan nerf dimunculkan dengan interval per 20 detik sekali
+    - Pada satu kali pemunculan token buff & nerf, total token yang dimunculkan adalah 5
+    - Pada satu kali pemunculan token buff & nerf, hanya boleh ada 1 token untuk satu buff/nerf token. Misalnya, hanya ada 1 token speed up pada satu kali pemunculan token buff & nerf
+    - Ketika suatu interval pemunculan token buff dan nerf selesai, maka token buff dan nerf yang sebelumnya ada di arena dihilangkan terlebih dahulu. Lalu, token buff dan nerf baru dimunculkan. Jadi, tidak akan ada penumpukan token buff dan nerf
+    - ![[BuffNerfTokenTable]]
 
-### Environment
+### Arena
 
-- adalah obstacle ^obstacle
-
-### Struktur Permainan
-
-- Satu sesi permainan terdiri atas 5 [[CoreMechanic#^ronde|ronde]]
-- Sebelum sesi dimulai, dilakukan pengacakan apa [[CoreMechanic#^role|role]] dari player character maupun AI character
-- ##### Timer
-  - 1 ronde dilaksanakan selama 1 menit (real-life time)^ronde
-
-#### End condition
-
-- paling lambat, permainan selesai jika sudah dilakukan 5 [[CoreMechanic#^ronde|ronde]] ^end-condition
-- tetapi permainan bisa dinyatakan selesai jika ada satu character yang sudah memenangkan 3 [[CoreMechanic#^ronde|ronde]]
-- #### Round win condition
-  - Character menang di suatu ronde jika berhasil memenuhi objective dari [[CoreMechanic#^role|role]]-nya pada ronde tersebut
-  - Jika menang, maka score character tersebut bertambah 1
-
-* #### Round lose condition
-  - Character kalah di suatu ronde jika gagal memenuhi objective dari [[CoreMechanic#^role|role]]-nya pada ronde tersebut
-
-#### Role
-
-- #### Chaser
-  - Chaser adalah role di mana character harus melakukan tag pada lawan untuk memenangkan ronde ^role
-  - Character yang memiliki role chaser menang pada suatu ronde jika dia berhasil melakukan tag terhadap character lawan sebelum ronde berakhir ^chaser
-  - Chaser bisa melakukan [[CoreMechanic#^tagging|tagging]]
-- #### Evader
-  - Evader adalah role di mana character harus menghindari tag dari lawan selama ronde berlangsung ^evader
-  - Character yang memiliki role evader menang pada suatu ronde jika dia berhasil tidak dikenai tag oleh character lawan sampai ronde berakhir
-  - Evader tidak bisa melakukan [[CoreMechanic#^tagging|tagging]]
+- #### Level design
+  - Layout dari level design untuk game ini sepenuhnya didasarkan pada The Quad dari World Chase Tag
+    - [Cek layout The Quad dalam bentuk 2D di sini](https://www.chasealphen.nl/en/wct/)
+    - ![[Asset/TheQuad2D.png]]
+    - [Cek layout The Quad dalam bentuk 3D di sini](https://sketchfab.com/3d-models/world-chase-tag-quad-98a0579a56b24a30ad83f9b7b93f0fd4)
+    - ![[Asset/TheQuad3D.png]]
+  - **PERHATIAN:** tetapi, tim development bisa memodifikasi **detail** dari layout ini.
+- #### Obstacle
+  - Obstacle adalah benda-benda dalam arena yang bisa diinteraksi oleh character ^obstacle
+  - **PERHATIAN:** tim bisa menggunakan beragam obstacle
