@@ -224,6 +224,7 @@
   - Untuk melakukan jump, player harus menekan tombol space bar
   - Untuk melakukan slide, player harus menekan mouse klik kiri saat character sedang melakukan sprint
   - Untuk melakukan vault, player harus menekan mouse klik kiri saat sedang melakukan sprint di depan vault box atau ground yang ketinggiannya setidaknya sepinggang tinggi character
-  - Untuk melakukan pole spin, player harus menekan dan menahan mouse klik kanan ketika character berada di dekat pole
+  - Untuk melakukan pole spin, player harus menekan dan menahan mouse klik kiri ketika character berada di dekat pole
   - Untuk melakukan climb, player harus melakukan jump ke arah wall dan menekan mouse klik kiri
   - Untuk melakukan tic tac, player harus melakukan jump ke arah wall lalu menekan lagi space bar saat berada dekat dengan wall
+  - Untuk melakukan tagging, player harus menekan mouse klik kanan
