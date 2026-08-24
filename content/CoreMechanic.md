@@ -74,7 +74,8 @@
     - Character menggunakan stamina untuk melakukan beragam [[CoreMechanic#^movement|movement]] ^stamina
   - #### Buff & Nerf^buff-nerf
 
-- ### Environment^obstacle
+- ### Environment
+  - adalah obstacle ^obstacle
 
 - ### Struktur Permainan
   - Satu sesi permainan terdiri atas 5 [[CoreMechanic#^ronde|ronde]]
@@ -84,9 +85,7 @@
 
 #### End condition
 
-^end-condition
-
-- paling lambat, permainan selesai jika sudah dilakukan 5 [[CoreMechanic#^ronde|ronde]]
+- paling lambat, permainan selesai jika sudah dilakukan 5 [[CoreMechanic#^ronde|ronde]] ^end-condition
 - tetapi permainan bisa dinyatakan selesai jika ada satu character yang sudah memenangkan 3 [[CoreMechanic#^ronde|ronde]]
 - #### Round win condition
   - Character menang di suatu ronde jika berhasil memenuhi objective dari [[CoreMechanic#^role|role]]-nya pada ronde tersebut
@@ -97,18 +96,11 @@
 
 #### Role
 
-^role
-
 - #### Chaser
-
-^chaser
-\* Chaser adalah role di mana character harus melakukan tag pada lawan untuk memenangkan ronde
-\* Character yang memiliki role chaser menang pada suatu ronde jika dia berhasil melakukan tag terhadap character lawan sebelum ronde berakhir
-\* Chaser bisa melakukan [[CoreMechanic#^tagging|tagging]]
-
+  - Chaser adalah role di mana character harus melakukan tag pada lawan untuk memenangkan ronde ^role
+  - Character yang memiliki role chaser menang pada suatu ronde jika dia berhasil melakukan tag terhadap character lawan sebelum ronde berakhir ^chaser
+  - Chaser bisa melakukan [[CoreMechanic#^tagging|tagging]]
 - #### Evader
-
-^evader
-\* Evader adalah role di mana character harus menghindari tag dari lawan selama ronde berlangsung
-\* Character yang memiliki role evader menang pada suatu ronde jika dia berhasil tidak dikenai tag oleh character lawan sampai ronde berakhir
-\* Evader tidak bisa melakukan [[CoreMechanic#^tagging|tagging]]
+  - Evader adalah role di mana character harus menghindari tag dari lawan selama ronde berlangsung ^evader
+  - Character yang memiliki role evader menang pada suatu ronde jika dia berhasil tidak dikenai tag oleh character lawan sampai ronde berakhir
+  - Evader tidak bisa melakukan [[CoreMechanic#^tagging|tagging]]
