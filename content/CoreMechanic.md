@@ -1,7 +1,10 @@
-- ### Character
-  - Untuk memenangkan permainan, character (baik player character maupun AI character) bisa melakukan beragam jenis movement.
+### Character
+
+- Untuk memenangkan permainan, character (baik player character maupun AI character) bisa melakukan beragam jenis movement.
   - Ketika melakukan [[CoreMechanic#^movement|movement]], character menggunakan stamina
+
   - Selama permainan berlangsung, character bisa mendapatkan buff & nerf dari menyentuh token buff & nerf yang dimunculkan secara sembarang di wilayah arena dalam interval tertentu ^movement
+
   - #### Movement
     - ##### Walk
       - Character bisa berjalan (walk) dengan kecepatan normal ^walk
@@ -61,6 +64,7 @@
       - Wall rebound dilakukan secara otomatis ketika character melaju dalam kecepatan tertentu lalu menabrak dengan tembok
       - Perubahan arah laju secara otomatis dikalkulasi berdasarkan sudut tabrakan character dengan tembok. Misalnya, jika character menabrak tepat dari lurus depan tembok, maka otomatis dia akan melakukan wall rebound ke arah sebaliknya (meninggalkan tembok). Lalu, jika character menabrak tembok agak lebih dari sisi kiri tembok, maka wall reboundnya akan lebih memantul ke kanan
       - Jika character melakukan wall rebound, maka [[CoreMechanic#^stamina|stamina]] berkurang sekali ketika wall rebound dimulai, dan [[CoreMechanic#^stamina|stamina]] baru kembali bertambah ketika character sudah berdiri kembali
+
   - #### Tagging
     - Character bisa melakukan tagging terhadap character lain ^tagging
     - Tagging berarti character menyemprotkan sesuatu terhadap character lawan
@@ -70,18 +74,32 @@
     - Character [[CoreMechanic#^role|evader]] bisa dikenai tag ketika melakukan movement apa pun selama semprotan tag bertabrakan dengannya
     - Hanya character [[CoreMechanic#^role|chaser]] yang bisa melakukan aksi tagging
     - Jika character melakukan tagging, maka [[CoreMechanic#^stamina|stamina]] berkurang sekali ketika tagging dimulai, dan [[CoreMechanic#^stamina|stamina]] baru kembali bertambah ketika character berhenti melakukan tagging
+
   - #### Stamina system
     - Character menggunakan stamina untuk melakukan beragam [[CoreMechanic#^movement|movement]] ^stamina
-  - #### Buff & Nerf^buff-nerf
+    - Player bisa melihat stamina point player character melalui indikator stamina pada layer user interface
+    - Player bisa melihat indikator stamina AI character yang terdapat pada atas character
+    - Jika stamina character mencapai 0, maka character masuk ke dalam kondisi exhausted
+    - Exhausted adalah kondisi di mana kecepatan character 0.6x kecepatan normal dan character tidak bisa melakukan aksi selain [[CoreMechanic#^walk|walk]] atau [[CoreMechanic#^strafing|strafing]] sampai stamina mencapai nilai maksimal. Kondisi exhausted akan berhenti begitu stamina character mencapai nilai maksimal. ^exhausted
+    - ##### Base stamina cost
+      - Berikut ini adalah nilai dasar stamina point yang dibutuhkan untuk melakukan suatu aksi. **PERHATIAN:** programmer dan tim sangat dianjurkan untuk melakukan penyesuaian nilai ini untuk meningkatkan game feel dan game balance dari game ini. Ini hanya sebagai nilai dasar.
+      > \[!note]- Stamina cost
+    > | Movement | Stamina cost |
+    > | [[CoreMechanic#^sprint|sprint]]| 0.1x per detik|
 
-- ### Environment
-  - adalah obstacle ^obstacle
+  - #### Buff & Nerf
+    - adalah buff nerf ^buff-nerf
 
-- ### Struktur Permainan
-  - Satu sesi permainan terdiri atas 5 [[CoreMechanic#^ronde|ronde]]
-  - Sebelum sesi dimulai, dilakukan pengacakan apa [[CoreMechanic#^role|role]] dari player character maupun AI character
-  - ##### Timer
-    - 1 ronde dilaksanakan selama 1 menit (real-life time)^ronde
+### Environment
+
+- adalah obstacle ^obstacle
+
+### Struktur Permainan
+
+- Satu sesi permainan terdiri atas 5 [[CoreMechanic#^ronde|ronde]]
+- Sebelum sesi dimulai, dilakukan pengacakan apa [[CoreMechanic#^role|role]] dari player character maupun AI character
+- ##### Timer
+  - 1 ronde dilaksanakan selama 1 menit (real-life time)^ronde
 
 #### End condition
 
