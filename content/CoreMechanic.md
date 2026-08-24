@@ -19,12 +19,12 @@
 #### Role
 
 - #### Chaser
-  - Chaser adalah role di mana character harus melakukan tag pada lawan untuk memenangkan ronde ^role
-  - Character yang memiliki role chaser menang pada suatu ronde jika dia berhasil melakukan tag terhadap character lawan sebelum ronde berakhir ^chaser
+  - Chaser adalah role di mana character harus melakukan [[CoreMechanic#^tagging|tagging]] pada lawan untuk memenangkan ronde ^role
+  - Character yang memiliki role chaser menang pada suatu [[CoreMechanic#^ronde|ronde]] jika dia berhasil melakukan [[CoreMechanic#^tagging|tagging]] terhadap character lawan sebelum ronde berakhir ^chaser
   - Chaser bisa melakukan [[CoreMechanic#^tagging|tagging]]
 - #### Evader
-  - Evader adalah role di mana character harus menghindari tag dari lawan selama ronde berlangsung ^evader
-  - Character yang memiliki role evader menang pada suatu ronde jika dia berhasil tidak dikenai tag oleh character lawan sampai ronde berakhir
+  - Evader adalah role di mana character harus menghindari [[CoreMechanic#^tagging|tagging]] dari lawan selama ronde berlangsung ^evader
+  - Character yang memiliki role evader menang pada suatu [[CoreMechanic#^ronde|ronde]] jika dia berhasil tidak dikenai [[CoreMechanic#^tagging|tagging]] oleh character lawan sampai ronde berakhir
   - Evader tidak bisa melakukan [[CoreMechanic#^tagging|tagging]]
 
 ### Character
@@ -32,7 +32,7 @@
 - Untuk memenangkan permainan, character (baik player character maupun AI character) bisa melakukan beragam jenis movement.
   - Ketika melakukan [[CoreMechanic#^movement|movement]], character menggunakan stamina
 
-  - Selama permainan berlangsung, character bisa mendapatkan buff & nerf dari menyentuh token buff & nerf yang dimunculkan secara sembarang di wilayah arena dalam interval tertentu ^movement
+  - Selama permainan berlangsung, character bisa mendapatkan buff & nerf dari menyentuh [[CoreMechanic#^buff-nerf|token buff & nerf]] yang dimunculkan secara sembarang di wilayah arena dalam interval tertentu ^movement
 
   - #### Movement
     - ##### Walk
@@ -89,9 +89,9 @@
       - Jika character melakukan pole spin, maka [[CoreMechanic#^stamina|stamina]] berkurang selama pole dilakukan. Jadi, [[CoreMechanic#^stamina|stamina]] bisa berkurang sedikit jika putaran tidak dilakukan sebanyak 360 derajat, misalnya.
     - ##### Wall rebound
       - Character bisa melakukan wall rebound ^wall-rebound
-      - Wall rebound berarti character melaju lalu menabrak tembok lalu mengubah arah lajunya
-      - Wall rebound dilakukan secara otomatis ketika character melaju dalam kecepatan tertentu lalu menabrak dengan tembok
-      - Perubahan arah laju secara otomatis dikalkulasi berdasarkan sudut tabrakan character dengan tembok. Misalnya, jika character menabrak tepat dari lurus depan tembok, maka otomatis dia akan melakukan wall rebound ke arah sebaliknya (meninggalkan tembok). Lalu, jika character menabrak tembok agak lebih dari sisi kiri tembok, maka wall reboundnya akan lebih memantul ke kanan
+      - Wall rebound berarti character melaju lalu menabrak [[CoreMechanic#^wall|wall]] lalu mengubah arah lajunya
+      - Wall rebound dilakukan secara otomatis ketika character melaju dalam kecepatan tertentu lalu menabrak dengan [[CoreMechanic#^wall|wall]]
+      - Perubahan arah laju secara otomatis dikalkulasi berdasarkan sudut tabrakan character dengan tembok. Misalnya, jika character menabrak tepat dari lurus depan [[CoreMechanic#^wall|wall]], maka otomatis dia akan melakukan wall rebound ke arah sebaliknya (meninggalkan tembok). Lalu, jika character menabrak [[CoreMechanic#^wall|wall]] agak lebih dari sisi kiri tembok, maka wall reboundnya akan lebih memantul ke kanan
       - Jika character melakukan wall rebound, maka [[CoreMechanic#^stamina|stamina]] berkurang sekali ketika wall rebound dimulai, dan [[CoreMechanic#^stamina|stamina]] baru kembali bertambah ketika character sudah berdiri kembali
 
   - #### Tagging
@@ -130,11 +130,36 @@
 
 - #### Level design
   - Layout dari level design untuk game ini sepenuhnya didasarkan pada The Quad dari World Chase Tag
+    - Layout 2D ^layout-2D
+
     - [Cek layout The Quad dalam bentuk 2D di sini](https://www.chasealphen.nl/en/wct/)
+
     - ![[Asset/TheQuad2D.png]]
+
+    - Layout 3D Interaktif ^layout-3D
+
     - [Cek layout The Quad dalam bentuk 3D di sini](https://sketchfab.com/3d-models/world-chase-tag-quad-98a0579a56b24a30ad83f9b7b93f0fd4)
+
     - ![[Asset/TheQuad3D.png]]
+  - **PERHATIAN:** pada referensi sekeliling arena hanya dibatasi pagar pendek. Tapi, dalam game ini, sekeliling arena dibatasi [[CoreMechanic#^wall|wall]].
   - **PERHATIAN:** tetapi, tim development bisa memodifikasi **detail** dari layout ini.
+  - ##### Batasan Modifikasi Level
+    - **Modifikasi proporsi:** Tim development dipersilakan mengubah proporsi antara tiap elemen di level. Misalnya, tim development bisa memutuskan membuat bagian loading bay (cek [[CoreMechanic#^layout-2D|layout 2D]]) jadi lebih besar dibanding bagian lain berdasarkan referensi aslinya
+    - **Modifikasi jenis obstacle:** Tim development dipersilakan mengubah jenis obstacle pada sebuah bagian dengan obstacle lain. Misalnya, pada bagian lazy boy (cek [[CoreMechanic#^layout-2D|layout 2D]]) tim development bisa memutuskan untuk mengubah [[CoreMechanic#^pole|pole]] pada bagian itu menjadi [[CoreMechanic#^wall|wall]].
+    - **Modifikasi visual:** Tim development (khususnya tim artist) dipersilakan mengubah tampilan visual dari objek pada arena selama secara fungsi masih sama seperti fungsi pada referensi dan jenis obstacle. Misalnya, pada bagian the sisters (cek [[CoreMechanic#^layout-2D|layout 2D]]) tim artist mengubah salah satu pole menjadi secara visual tampak seperti tiang listrik.
 - #### Obstacle
   - Obstacle adalah benda-benda dalam arena yang bisa diinteraksi oleh character ^obstacle
-  - **PERHATIAN:** tim bisa menggunakan beragam obstacle
+  - **PERHATIAN:** tim development bisa menggunakan beragam obstacle ini untuk memodifikasi elemen level
+  - ##### Wall
+    - Wall adalah tembok atau permukaan vertikal atau cukup vertikal. ^wall
+    - Dalam konteks project ini, semua object yang dianggap sebagai wall bisa.
+  - ##### Vault box
+    - Vault box adalah ^vault-box
+  - ##### Pole
+    - Pole adalah ^pole
+  - ##### Ledge
+    - Ledge adalah ^ledge
+  - ##### Underbar
+    - Underbar adalah ^underbar
+  - ##### Ground
+    - Ground adalah ^ground
