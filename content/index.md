@@ -1,13 +1,20 @@
-Ini adalah game design document untuk project Chase Tag.
+Situs ini berisi arahan untuk project:
 
-Pada dokumen ini kamu bisa mendapatkan beragam macam informasi game design tentang project ini:
+## Grafitti Chase Tag
 
-- ## [[CoreExperience | Core experience]]
-- ## [[CoreMechanic | Core mechanic]]
-- ## [[FormatDiagram.canvas|Mechanic dalam diagram]]
-- ## [Basic Screenflow](https://canva.link/c21sdicnrjfpeep)
+Terdapat dua informasi utama pada page ini, yaitu:
 
-Selain itu, ada informasi tentang art direction dan asset listing:
+- ### Arahan Deliverable
+  - Bagian ini berisi hal-hal yang perlu dihasilkan oleh tim selama masa development. Silakan akses link berikut untuk melihat informasinya:
+  - [[Deliverables]]
+- ### Design Document Detail
+  - Bagian ini berisi detail game design documet dan art design document dari project ini. Silakan akses link berikut untuk melihat informasinya:
+  - [[Design Document]]
 
-- ## [[ArtDesignDocument | Art design document]]
--
+Dokumen brief ini disusun oleh:
+
+- Muhammad Al Mukhlishiddin
+- +6285524596808
+- almukhlishiddin@gmail.com
+- untuk keperluan project-based learning kerja sama antara Politeknik Negeri Jakarta & Agate Academy
+- Jika ada yang ingin ditanyakan tentang informasi pada situs ini, silakan hubungi kontak tersebut
