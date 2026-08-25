@@ -1,6 +1,6 @@
 ### Struktur Permainan
 
-- Satu sesi permainan terdiri atas 5 [[CoreMechanic#^ronde|ronde]]
+- Satu sesi permainan terdiri atas 5 [[CoreMechanic#^ronde|ronde]] ^struktur-permainan
 - Sebelum sesi dimulai, dilakukan pengacakan apa [[CoreMechanic#^role|role]] dari player character maupun AI character, siapa yang menjadi [[CoreMechanic#^chaser|chaser]] dan siapa yang menjadi [[CoreMechanic#^evader|evader]]
 - ##### Timer
   - 1 ronde dilaksanakan selama 2 menit (real-life time)^ronde

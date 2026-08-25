@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"98ae04990ff287dd","type":"text","text":"[[CoreMechanic#Struktur Permainan|Struktur permainan]]","x":-180,"y":-160,"width":250,"height":60},
+		{"id":"98ae04990ff287dd","type":"text","text":"[[CoreMechanic#Struktur Permainan|Struktur permainan]]","x":-180,"y":-240,"width":250,"height":140},
 		{"id":"a818d5da5fe93a74","type":"text","text":"[[CoreMechanic#^end-condition|End condition]]","x":-360,"y":40,"width":250,"height":60},
 		{"id":"bfcdba5876deb1a0","type":"text","text":"[[CoreMechanic#^chaser|Chaser]]","x":-235,"y":200,"width":250,"height":60},
 		{"id":"989306a1d328daa9","type":"text","text":"[[CoreMechanic#^evader|Evader]]","x":70,"y":200,"width":250,"height":60},
