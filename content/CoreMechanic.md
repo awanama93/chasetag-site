@@ -1,47 +1,43 @@
+<div id="struktur-permainan"></div>
 ### Struktur Permainan
-
 - Satu sesi permainan terdiri atas 5 [[CoreMechanic#^ronde|ronde]] ^struktur-permainan
 - Sebelum sesi dimulai, dilakukan pengacakan apa [[CoreMechanic#^role|role]] dari player character maupun AI character, siapa yang menjadi [[CoreMechanic#^chaser|chaser]] dan siapa yang menjadi [[CoreMechanic#^evader|evader]]
 - ##### Timer
-  - 1 ronde dilaksanakan selama 2 menit (real-life time)^ronde
+	-  1 ronde dilaksanakan selama 2 menit (real-life time)^ronde
 
+<div id="end-condition"></div>
 #### End condition
+* paling lambat, permainan selesai jika sudah dilakukan 5 [[CoreMechanic#^ronde|ronde]] ^end-condition
+* tetapi permainan bisa dinyatakan selesai jika ada satu character yang sudah memenangkan 3 [[CoreMechanic#^ronde|ronde]]
+* #### Round win condition
+	- Character menang di suatu ronde jika berhasil memenuhi objective dari [[CoreMechanic#^role|role]]-nya pada ronde tersebut
+	- Jika menang, maka score character tersebut bertambah 1
+- #### Round lose condition
+	* Character kalah di suatu ronde jika gagal memenuhi objective dari [[CoreMechanic#^role|role]]-nya pada ronde tersebut
 
-- paling lambat, permainan selesai jika sudah dilakukan 5 [[CoreMechanic#^ronde|ronde]] ^end-condition
-- tetapi permainan bisa dinyatakan selesai jika ada satu character yang sudah memenangkan 3 [[CoreMechanic#^ronde|ronde]]
-- #### Round win condition
-  - Character menang di suatu ronde jika berhasil memenuhi objective dari [[CoreMechanic#^role|role]]-nya pada ronde tersebut
-  - Jika menang, maka score character tersebut bertambah 1
-
-* #### Round lose condition
-  - Character kalah di suatu ronde jika gagal memenuhi objective dari [[CoreMechanic#^role|role]]-nya pada ronde tersebut
-
+<div id="role"></div>
 #### Role
-
 - #### Chaser
-  - Chaser adalah role di mana character harus melakukan [[CoreMechanic#^tagging|tagging]] pada lawan untuk memenangkan ronde ^role
-  - Character yang memiliki role chaser menang pada suatu [[CoreMechanic#^ronde|ronde]] jika dia berhasil melakukan [[CoreMechanic#^tagging|tagging]] terhadap character lawan sebelum ronde berakhir ^chaser
-  - Chaser bisa melakukan [[CoreMechanic#^tagging|tagging]]
+	* Chaser adalah role di mana character harus melakukan [[CoreMechanic#^tagging|tagging]] pada lawan untuk memenangkan ronde ^role
+	* Character yang memiliki role chaser menang pada suatu [[CoreMechanic#^ronde|ronde]] jika dia berhasil melakukan [[CoreMechanic#^tagging|tagging]] terhadap character lawan sebelum ronde berakhir ^chaser
+	* Chaser bisa melakukan [[CoreMechanic#^tagging|tagging]] 
 - #### Evader
-  - Evader adalah role di mana character harus menghindari [[CoreMechanic#^tagging|tagging]] dari lawan selama ronde berlangsung ^evader
-  - Character yang memiliki role evader menang pada suatu [[CoreMechanic#^ronde|ronde]] jika dia berhasil tidak dikenai [[CoreMechanic#^tagging|tagging]] oleh character lawan sampai ronde berakhir
-  - Evader tidak bisa melakukan [[CoreMechanic#^tagging|tagging]]
+	* Evader adalah role di mana character harus menghindari [[CoreMechanic#^tagging|tagging]] dari lawan selama ronde berlangsung ^evader
+	* Character yang memiliki role evader menang pada suatu [[CoreMechanic#^ronde|ronde]] jika dia berhasil tidak dikenai [[CoreMechanic#^tagging|tagging]] oleh character lawan sampai ronde berakhir
+	* Evader tidak bisa melakukan [[CoreMechanic#^tagging|tagging]] 
 
 ### Character
 
 - Untuk memenangkan permainan, character (baik player character maupun AI character) bisa melakukan beragam jenis movement.
+
   - Ketika melakukan [[CoreMechanic#^movement|movement]], semua character menggunakan stamina
-
   - Semua character bisa melakukan [[CoreMechanic#^tagging|tagging]] ketika mendapatkan giliran sebagai [[CoreMechanic#^chaser|chaser]]
-
   - Selama permainan berlangsung, semua character bisa mendapatkan buff & nerf dari menyentuh [[CoreMechanic#^buff-nerf|token buff & nerf]] yang dimunculkan secara sembarang di wilayah arena dalam interval tertentu ^movement
-
   - #### Jenis Character
     - Player character
       - Player character adalah character yang dikendalikan oleh player ^player-character
     - AI character
       - AI character adalah character yang dikendalikan oleh computer/AI. Arahan tentang pengambilan keputusan AI dideskripsikan pada bagian [[CoreMechanic#^decision|decision]]
-
   - #### Movement
     - Penjelasan tentang cara player melakukan kontrol player character, dijelaskan di bagian [[CoreMechanic#^interaction|interaction]]
     - ##### Walk
@@ -114,7 +110,6 @@
       - Jika character melakukan wall rebound, maka [[CoreMechanic#^stamina|stamina]] berkurang sekali ketika wall rebound dimulai, dan [[CoreMechanic#^stamina|stamina]] baru kembali bertambah ketika character sudah berdiri kembali
       - Referensi gerakan wall rebound:
       - ![](https://youtu.be/HTI9XQ4EBNQ?si=Kd3PMzB_iD23d3oA)
-
   - #### Tagging
     - Character bisa melakukan tagging terhadap character lain ^tagging
     - Tagging berarti character menyemprotkan sesuatu terhadap character lawan
@@ -125,15 +120,16 @@
     - Hanya character [[CoreMechanic#^role|chaser]] yang bisa melakukan aksi tagging
     - Jika character melakukan tagging, maka [[CoreMechanic#^stamina|stamina]] berkurang sekali ketika tagging dimulai, dan [[CoreMechanic#^stamina|stamina]] baru kembali bertambah ketika character berhenti melakukan tagging
 
+  <div id="stamina"></div>
   - #### Stamina system
-    - Character menggunakan stamina untuk melakukan beragam [[CoreMechanic#^movement|movement]] ^stamina
-    - Player bisa melihat stamina point player character melalui indikator stamina pada layer user interface
-    - Player bisa melihat indikator stamina AI character yang terdapat pada atas character
-    - Jika stamina character mencapai 0, maka character masuk ke dalam kondisi exhausted
-    - Exhausted adalah kondisi di mana kecepatan character 0.6x kecepatan normal dan character tidak bisa melakukan aksi selain [[CoreMechanic#^walk|walk]] atau [[CoreMechanic#^strafing|strafing]] sampai stamina mencapai nilai maksimal. Kondisi exhausted akan berhenti begitu stamina character mencapai nilai maksimal. ^exhausted
-    - ##### Base stamina cost
-      - Berikut ini adalah nilai dasar stamina point yang dibutuhkan untuk melakukan suatu aksi. **PERHATIAN:** programmer dan tim sangat dianjurkan untuk melakukan penyesuaian nilai ini untuk meningkatkan game feel dan game balance dari game ini. Ini hanya sebagai nilai dasar.
-      - ![[BaseStaminaCostTable |Stamina Cost Table]]
+  	- Character menggunakan stamina untuk melakukan beragam [[CoreMechanic#^movement|movement]] ^stamina
+  	- Player bisa melihat stamina point player character melalui indikator stamina pada layer user interface
+  	- Player bisa melihat indikator stamina AI character yang terdapat pada atas character
+  	- Jika stamina character mencapai 0, maka character masuk ke dalam kondisi exhausted
+  	- Exhausted adalah kondisi di mana kecepatan character 0.6x kecepatan normal dan character tidak bisa melakukan aksi selain [[CoreMechanic#^walk|walk]] atau [[CoreMechanic#^strafing|strafing]] sampai stamina mencapai nilai maksimal. Kondisi exhausted akan berhenti begitu stamina character mencapai nilai maksimal. ^exhausted
+  	- ##### Base stamina cost
+  		- Berikut ini adalah nilai dasar stamina point yang dibutuhkan untuk melakukan suatu aksi. **PERHATIAN:** programmer dan tim sangat dianjurkan untuk melakukan penyesuaian nilai ini untuk meningkatkan game feel dan game balance dari game ini. Ini hanya sebagai nilai dasar.
+  		- ![[BaseStaminaCostTable |Stamina Cost Table]] 
 
   - #### Buff & Nerf
     - Sepanjang ronde di wilayah arena akan dimunculkan beragam buff dan nerf token ^buff-nerf
