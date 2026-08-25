@@ -135,7 +135,7 @@
       - Berikut ini adalah nilai dasar stamina point yang dibutuhkan untuk melakukan suatu aksi. **PERHATIAN:** programmer dan tim sangat dianjurkan untuk melakukan penyesuaian nilai ini untuk meningkatkan game feel dan game balance dari game ini. Ini hanya sebagai nilai dasar.
       - ![[BaseStaminaCostTable |Stamina Cost Table]]
 
-  - #### Buff & Nerf
+  - #### Buff Nerf
     - Sepanjang ronde di wilayah arena akan dimunculkan beragam buff dan nerf token ^buff-nerf
     - Token buff dan nerf adalah token yang akan mengubah nilai stat dari character selama beberapa saat. Jadi perubahannya tidak permanen.
     - Player bisa melihat buff atau nerf apa yang sedang dimiliki player character lewat informasi di user interface
@@ -206,7 +206,7 @@
 
 - Interaction di sini berarti bagaimana player mewujudkan [[CoreMechanic#^decision|decision]] dalam game ini ^interaction
 - Player melakukan interaction dengan menggunakan mouse dan keyboard.
-- #### Camera & mouse
+- #### Camera n mouse
   - Camera dalam game adalah third-person di belakang player character
   - Rotasi camera bisa dilakukan dengan menggeser mouse
   - Camera hanya bisa melakukan pan dan tilt
